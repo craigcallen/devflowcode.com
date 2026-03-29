@@ -1,5 +1,9 @@
 <p align="center">
-  <img src="https://assets.craigcallen.com/media/devflowcode/tertiary-logo-inverse.svg" alt="DevFlow" height="60" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://assets.craigcallen.com/media/devflowcode/tertiary-logo-inverse.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://assets.craigcallen.com/media/devflowcode/primary-logo.svg" />
+    <img src="https://assets.craigcallen.com/media/devflowcode/tertiary-logo-inverse.svg" alt="DevFlow" height="60" />
+  </picture>
 </p>
 
 <h3 align="center">One context. Every agent. Every developer.</h3>
