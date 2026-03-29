@@ -102,7 +102,7 @@ export default function FeatureGrid() {
           <span className="inline-block rounded-full bg-indigo/10 border border-indigo/20 px-3 py-1 text-xs font-medium text-indigo-light font-mono mb-4">
             FEATURES
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-heading font-bold text-cream tracking-tight">
             10 power features
           </h2>
           <p className="mt-4 text-text-muted max-w-lg mx-auto">
@@ -124,7 +124,7 @@ export default function FeatureGrid() {
                 {f.icon}
               </div>
               <div>
-                <h3 className="text-white font-semibold mb-1">{f.title}</h3>
+                <h3 className="text-cream font-heading font-semibold mb-1">{f.title}</h3>
                 <p className="text-text-muted text-sm">{f.description}</p>
               </div>
             </motion.div>

@@ -31,13 +31,13 @@ const problems = [
 
 export default function ProblemBar() {
   return (
-    <AnimatedSection className="py-24 border-y border-border">
+    <AnimatedSection className="py-24 bg-bg-raised border-y border-border">
       <div className="mx-auto max-w-5xl px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {problems.map((p, i) => (
             <div key={i} className="flex flex-col items-center text-center gap-4">
               <div className="text-indigo">{p.icon}</div>
-              <p className="text-white text-lg font-medium">{p.text}</p>
+              <p className="text-cream font-heading text-lg font-medium">{p.text}</p>
             </div>
           ))}
         </div>

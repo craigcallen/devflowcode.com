@@ -78,7 +78,7 @@ export default function ProductOverview() {
           <span className="inline-block rounded-full bg-indigo/10 border border-indigo/20 px-3 py-1 text-xs font-medium text-indigo-light font-mono mb-4">
             THE WORKSPACE
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-heading font-bold text-cream tracking-tight">
             Six surfaces. One workspace.
           </h2>
           <p className="mt-4 text-text-muted max-w-xl mx-auto">
@@ -104,7 +104,7 @@ export default function ProductOverview() {
                     {s.label}
                   </span>
                 </div>
-                <h3 className="text-white font-semibold text-lg mb-2">{s.title}</h3>
+                <h3 className="text-cream font-heading font-semibold text-lg mb-2">{s.title}</h3>
                 <p className="text-text-muted text-sm leading-relaxed">{s.description}</p>
               </div>
             </motion.div>

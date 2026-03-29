@@ -9,7 +9,7 @@ export default function Hero() {
         className="absolute inset-0 opacity-[0.03]"
         style={{
           backgroundImage:
-            'linear-gradient(#6366f1 1px, transparent 1px), linear-gradient(90deg, #6366f1 1px, transparent 1px)',
+            'linear-gradient(#2A9D8F 1px, transparent 1px), linear-gradient(90deg, #2A9D8F 1px, transparent 1px)',
           backgroundSize: '64px 64px',
         }}
       />
@@ -23,13 +23,13 @@ export default function Hero() {
           transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
         >
           <div className="inline-flex items-center gap-2 rounded-full border border-border bg-bg-raised px-4 py-1.5 text-sm text-text-muted mb-8">
-            <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="inline-block w-2 h-2 rounded-full bg-peach animate-pulse" />
             Free beta — now available for macOS
           </div>
         </motion.div>
 
         <motion.h1
-          className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white leading-[1.08]"
+          className="text-5xl sm:text-6xl md:text-7xl font-heading font-bold tracking-tight text-cream leading-[1.08]"
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] }}
@@ -74,7 +74,7 @@ export default function Hero() {
 
         {/* App screenshot placeholder */}
         <motion.div
-          className="mt-16 mx-auto max-w-3xl rounded-xl border border-border bg-bg-raised overflow-hidden shadow-2xl shadow-indigo-glow/20"
+          className="mt-16 mx-auto max-w-3xl rounded-t-xl border border-b-0 border-border bg-bg-raised overflow-hidden shadow-2xl shadow-indigo-glow/20"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
@@ -86,7 +86,7 @@ export default function Hero() {
             <span className="ml-2 text-xs text-text-muted font-mono">DevFlow — devflowcode.com</span>
           </div>
           <div className="aspect-[16/9] bg-bg flex items-center justify-center">
-            <p className="text-text-muted text-sm">App screenshot — coming soon</p>
+            <img src="https://assets.craigcallen.com/media/devflowcode/devflow-screenshot.png"></img>
           </div>
         </motion.div>
       </div>

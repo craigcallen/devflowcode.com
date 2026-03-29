@@ -29,7 +29,7 @@ export default function EmailCapture({ className = '' }: { className?: string })
 
   if (status === 'success') {
     return (
-      <p className={`text-emerald-400 text-sm font-medium py-3 ${className}`}>
+      <p className={`text-peach text-sm font-medium py-3 ${className}`}>
         You're on the list. We'll be in touch.
       </p>
     )
@@ -51,12 +51,12 @@ export default function EmailCapture({ className = '' }: { className?: string })
       <button
         type="submit"
         disabled={status === 'loading'}
-        className="rounded-full bg-indigo px-6 py-3 text-sm font-medium text-white hover:bg-indigo-light transition-colors whitespace-nowrap cursor-pointer disabled:opacity-60"
+        className="rounded-full bg-pink px-6 py-3 text-sm font-medium text-white hover:bg-pink/80 transition-colors whitespace-nowrap cursor-pointer disabled:opacity-60"
       >
         {status === 'loading' ? 'Joining...' : 'Request Early Access'}
       </button>
       {status === 'error' && (
-        <p className="text-red-400 text-xs sm:absolute sm:mt-14">
+        <p className="text-pink text-xs sm:absolute sm:mt-14">
           Something went wrong. Try again.
         </p>
       )}

@@ -33,7 +33,7 @@ export default function MCPDeepDive() {
             <span className="inline-block rounded-full bg-indigo/10 border border-indigo/20 px-3 py-1 text-xs font-medium text-indigo-light font-mono mb-6">
               MCP PROTOCOL
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-6">
+            <h2 className="text-3xl sm:text-4xl font-heading font-bold text-cream tracking-tight mb-6">
               Your AI agents finally know what's going on
             </h2>
             <p className="text-text-muted leading-relaxed mb-8">
@@ -91,7 +91,7 @@ export default function MCPDeepDive() {
                 {codeSnippet.split('\n').map((line, i) => (
                   <div key={i} className={line.startsWith('//') || line.startsWith('>') ? 'text-text-muted' : 'text-indigo-light'}>
                     {line.startsWith('>') ? (
-                      <span className="text-emerald-400">{line}</span>
+                      <span className="text-peach">{line}</span>
                     ) : line.startsWith('//') ? (
                       <span className="text-text-muted">{line}</span>
                     ) : (

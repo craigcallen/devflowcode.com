@@ -38,7 +38,7 @@ export default function PricingPreview() {
           <span className="inline-block rounded-full bg-indigo/10 border border-indigo/20 px-3 py-1 text-xs font-medium text-indigo-light font-mono mb-4">
             PRICING
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-heading font-bold text-cream tracking-tight">
             Free while it lasts
           </h2>
           <p className="mt-4 text-text-muted max-w-lg mx-auto">
@@ -61,12 +61,12 @@ export default function PricingPreview() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
             >
               {plan.highlight && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-indigo px-3 py-0.5 text-xs font-medium text-white">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-pink px-3 py-0.5 text-xs font-medium text-white">
                   Available now
                 </div>
               )}
-              <h3 className="text-white font-semibold text-lg mb-1">{plan.name}</h3>
-              <div className="text-2xl font-bold text-white mb-1">{plan.price}</div>
+              <h3 className="text-cream font-heading font-semibold text-lg mb-1">{plan.name}</h3>
+              <div className="text-2xl font-heading font-bold text-cream mb-1">{plan.price}</div>
               <p className="text-text-muted text-sm mb-6">{plan.description}</p>
               <ul className="space-y-2.5 mb-8">
                 {plan.features.map((f, j) => (
@@ -88,8 +88,8 @@ export default function PricingPreview() {
                 href="#cta"
                 className={`block text-center rounded-full px-6 py-2.5 text-sm font-medium transition-colors ${
                   plan.highlight
-                    ? 'bg-indigo text-white hover:bg-indigo-light'
-                    : 'bg-bg-raised border border-border text-white hover:border-indigo/40'
+                    ? 'bg-pink text-white hover:bg-pink/80'
+                    : 'bg-bg-raised border border-border text-cream hover:border-indigo/40'
                 }`}
               >
                 {plan.cta}
