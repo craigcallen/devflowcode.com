@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion'
 import AnimatedSection from './AnimatedSection'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheck } from '@fortawesome/pro-regular-svg-icons'
 
 const codeSnippet = `// claude_desktop_config.json
 {
@@ -52,19 +54,7 @@ export default function MCPDeepDive() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: 0.2 + i * 0.1 }}
                 >
-                  <svg
-                    className="w-4 h-4 text-indigo mt-0.5 shrink-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="m4.5 12.75 6 6 9-13.5"
-                    />
-                  </svg>
+                  <FontAwesomeIcon icon={faCheck} className="w-4 h-4 text-indigo mt-0.5 shrink-0" />
                   {point}
                 </motion.li>
               ))}

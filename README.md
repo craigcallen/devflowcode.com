@@ -52,4 +52,4 @@ DevFlow is in free beta for macOS.
 
 ---
 
-<sub>Built by [Allen Media](https://allenmedia.dev). Built inside DevFlow.</sub>
+<sub>Built by [Allen Media](https://craigcallen.com). Built inside DevFlow.</sub>
