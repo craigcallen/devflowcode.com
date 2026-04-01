@@ -4,16 +4,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 const AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID;
 
 export const handler = async (event) => {
-  const headers = {
-    'Content-Type': 'application/json',
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Methods': 'POST, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type',
-  };
-
-  if (event.requestContext?.http?.method === 'OPTIONS') {
-    return { statusCode: 204, headers };
-  }
+  const headers = { 'Content-Type': 'application/json' };
 
   if (event.requestContext?.http?.method !== 'POST') {
     return { statusCode: 405, headers, body: JSON.stringify({ error: 'Method not allowed' }) };
