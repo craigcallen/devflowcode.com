@@ -40,7 +40,7 @@ const stats = [
 
 export default function StatsBar() {
   return (
-    <AnimatedSection className="py-20 bg-bg">
+    <AnimatedSection className="py-20 bg-bg border-t border-border">
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {stats.map((stat, i) => (

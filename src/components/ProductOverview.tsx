@@ -51,7 +51,7 @@ const surfaces: { title: string; label: string; description: string; icon: IconD
 
 export default function ProductOverview() {
   return (
-    <AnimatedSection className="py-28" id="features">
+    <AnimatedSection className="py-28 border-t border-border" id="features">
       <div className="mx-auto max-w-6xl px-6">
         <div className="text-center mb-16">
           <span className="inline-block rounded-full bg-indigo/10 border border-indigo/20 px-3 py-1 text-xs font-medium text-indigo-light font-mono mb-4">

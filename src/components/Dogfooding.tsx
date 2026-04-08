@@ -2,7 +2,7 @@ import AnimatedSection from './AnimatedSection'
 
 export default function Dogfooding() {
   return (
-    <AnimatedSection className="py-28">
+    <AnimatedSection className="py-28 border-t border-border">
       <div className="mx-auto max-w-3xl px-6 text-center">
         <span className="inline-block rounded-full bg-indigo/10 border border-indigo/20 px-3 py-1 text-xs font-medium text-indigo-light font-mono mb-6">
           DOGFOODING

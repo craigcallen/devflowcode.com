@@ -19,7 +19,7 @@ const staticLines = [
 
 export default function TokenComparison() {
   return (
-    <AnimatedSection className="py-24 bg-bg">
+    <AnimatedSection className="py-24 bg-bg border-t border-border">
       <div className="mx-auto max-w-5xl px-6">
         <div className="text-center mb-14">
           <span className="inline-block rounded-full bg-indigo/10 border border-indigo/20 px-3 py-1 text-xs font-medium text-indigo-light font-mono mb-4">
