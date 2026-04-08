@@ -29,7 +29,7 @@ const points = [
 
 export default function MCPDeepDive() {
   return (
-    <AnimatedSection className="py-28 bg-bg-raised border-y border-border" id="mcp">
+    <AnimatedSection className="py-28 bg-bg-raised border-t border-border" id="mcp">
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>

@@ -59,7 +59,7 @@ const features: { title: string; description: string; icon: IconDefinition }[] =
 
 export default function FeatureGrid() {
   return (
-    <AnimatedSection className="py-28 bg-bg-raised border-y border-border">
+    <AnimatedSection className="py-28 bg-bg-raised border-t border-border">
       <div className="mx-auto max-w-6xl px-6">
         <div className="text-center mb-16">
           <span className="inline-block rounded-full bg-indigo/10 border border-indigo/20 px-3 py-1 text-xs font-medium text-indigo-light font-mono mb-4">
