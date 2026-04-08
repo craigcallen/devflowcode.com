@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion'
 import AnimatedSection from './AnimatedSection'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faServer, faArrowRightArrowLeft, faLightbulb, faGraduationCap, faCodePullRequest, faPlay, faMagnifyingGlass, faClipboardList, faMoon, faCircleCheck } from '@fortawesome/pro-regular-svg-icons'
+import { faServer, faArrowRightArrowLeft, faLightbulb, faGraduationCap, faCodePullRequest, faPlay, faMagnifyingGlass, faClipboardList, faMoon, faCircleCheck, faRoute, faWandMagicSparkles } from '@fortawesome/pro-regular-svg-icons'
 import type { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 
 const features: { title: string; description: string; icon: IconDefinition }[] = [
   {
     title: 'MCP Server',
-    description: 'Live repo context for any AI agent',
+    description: 'Live repo context — zero upfront injection, always current, write access included',
     icon: faServer,
   },
   {
@@ -55,18 +55,28 @@ const features: { title: string; description: string; icon: IconDefinition }[] =
     description: "We use it. That's the proof.",
     icon: faCircleCheck,
   },
+  {
+    title: 'Workflows',
+    description: 'Goal → AI discussion → phased roadmap',
+    icon: faRoute,
+  },
+  {
+    title: 'Skills',
+    description: 'Auto-discovered slash commands for every agent',
+    icon: faWandMagicSparkles,
+  },
 ]
 
 export default function FeatureGrid() {
   return (
-    <AnimatedSection className="py-28 bg-bg-raised border-y border-border">
+    <AnimatedSection className="py-28 bg-bg-raised border-t border-border">
       <div className="mx-auto max-w-6xl px-6">
         <div className="text-center mb-16">
           <span className="inline-block rounded-full bg-indigo/10 border border-indigo/20 px-3 py-1 text-xs font-medium text-indigo-light font-mono mb-4">
             FEATURES
           </span>
           <h2 className="text-3xl sm:text-4xl font-heading font-bold text-cream tracking-tight">
-            10 power features
+            12 power features
           </h2>
           <p className="mt-4 text-text-muted max-w-lg mx-auto">
             Everything technical leads and small teams need to ship with AI agents.

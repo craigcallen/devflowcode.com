@@ -21,7 +21,11 @@ export default function Navbar() {
     >
       <div className="mx-auto max-w-6xl px-6 flex items-center justify-between h-16">
         <a href="#">
-          <img src="https://assets.craigcallen.com/media/devflowcode/tertiary-logo-inverse.svg" alt="DevFlow" className="h-10" />
+          <img
+            src="https://assets.craigcallen.com/media/devflowcode/tertiary-logo-inverse.svg"
+            alt="DevFlow"
+            className="h-10"
+          />
         </a>
 
         <div className="hidden md:flex items-center gap-8 text-sm text-text-muted">
@@ -35,7 +39,7 @@ export default function Navbar() {
             Pricing
           </a>
           <a
-            href="https://github.com/craigcallen/devflowcode.com"
+            href="https://github.com/craigcallen/devflowcode.com/blob/main/README.md"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-cream transition-colors"

@@ -34,7 +34,7 @@ const plans = [
 
 export default function PricingPreview() {
   return (
-    <AnimatedSection className="py-28" id="pricing">
+    <AnimatedSection className="py-28 border-t border-border" id="pricing">
       <div className="mx-auto max-w-4xl px-6">
         <div className="text-center mb-16">
           <span className="inline-block rounded-full bg-indigo/10 border border-indigo/20 px-3 py-1 text-xs font-medium text-indigo-light font-mono mb-4">

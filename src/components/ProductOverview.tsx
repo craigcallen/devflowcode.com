@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import AnimatedSection from './AnimatedSection'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChartKanban, faServer, faGraduationCap, faLightbulb, faCodePullRequest, faRectangleTerminal } from '@fortawesome/pro-regular-svg-icons'
+import { faChartKanban, faServer, faGraduationCap, faLightbulb, faCodePullRequest, faRectangleTerminal, faRoute, faWandMagicSparkles } from '@fortawesome/pro-regular-svg-icons'
 import type { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 
 const surfaces: { title: string; label: string; description: string; icon: IconDefinition }[] = [
@@ -47,18 +47,32 @@ const surfaces: { title: string; label: string; description: string; icon: IconD
       'Launch Claude Code, Codex, or Gemini from the terminal tab bar. Sessions auto-detect which agent is running.',
     icon: faRectangleTerminal,
   },
+  {
+    title: 'From goal to phased roadmap',
+    label: 'Workflows',
+    description:
+      'Define a goal. AI surfaces the hard questions. Get a structured, phased plan linked to your kanban.',
+    icon: faRoute,
+  },
+  {
+    title: 'Agents that configure themselves',
+    label: 'Skills',
+    description:
+      'Every MCP tool packaged as a slash command. Agents discover capabilities automatically — zero prompt engineering.',
+    icon: faWandMagicSparkles,
+  },
 ]
 
 export default function ProductOverview() {
   return (
-    <AnimatedSection className="py-28" id="features">
+    <AnimatedSection className="py-28 border-t border-border" id="features">
       <div className="mx-auto max-w-6xl px-6">
         <div className="text-center mb-16">
           <span className="inline-block rounded-full bg-indigo/10 border border-indigo/20 px-3 py-1 text-xs font-medium text-indigo-light font-mono mb-4">
             THE WORKSPACE
           </span>
           <h2 className="text-3xl sm:text-4xl font-heading font-bold text-cream tracking-tight">
-            Six surfaces. One workspace.
+            Eight surfaces. One workspace.
           </h2>
           <p className="mt-4 text-text-muted max-w-xl mx-auto">
             Everything your AI agents need to ship — without you explaining it again.
