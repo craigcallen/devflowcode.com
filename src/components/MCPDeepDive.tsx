@@ -20,10 +20,11 @@ const codeSnippet = `// claude_desktop_config.json
 > get_learning_context()`
 
 const points = [
+  'Zero upfront injection \u2014 agents fetch exactly what they need, when they need it',
+  'Every tool call returns live data — not a stale snapshot from session start',
+  'Agents don\u2019t just read your project — they create tasks, log decisions, and move cards',
   'One config copy per agent — paste it, connect, done',
-  'Context scoped to the active repo automatically',
   'Works with Claude Code, Codex, Gemini, and any MCP-compatible agent',
-  'Drag a card to In Progress — agent launches with full context',
 ]
 
 export default function MCPDeepDive() {
@@ -35,9 +36,12 @@ export default function MCPDeepDive() {
             <span className="inline-block rounded-full bg-indigo/10 border border-indigo/20 px-3 py-1 text-xs font-medium text-indigo-light font-mono mb-6">
               MCP PROTOCOL
             </span>
-            <h2 className="text-3xl sm:text-4xl font-heading font-bold text-cream tracking-tight mb-6">
-              Your AI agents finally know what's going on
+            <h2 className="text-3xl sm:text-4xl font-heading font-bold text-cream tracking-tight mb-4">
+              Zero upfront context. Always current. Write access included.
             </h2>
+            <p className="text-lg text-cream/80 font-medium mb-4">
+              Your AI agents finally know what's going on
+            </p>
             <p className="text-text-muted leading-relaxed mb-8">
               DevFlow runs a local MCP server that exposes your entire project —
               tasks, notes, learning entries, repo context, PR history — to any

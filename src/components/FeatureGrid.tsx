@@ -7,7 +7,7 @@ import type { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 const features: { title: string; description: string; icon: IconDefinition }[] = [
   {
     title: 'MCP Server',
-    description: 'Live repo context for any AI agent',
+    description: 'Live repo context — zero upfront injection, always current, write access included',
     icon: faServer,
   },
   {
