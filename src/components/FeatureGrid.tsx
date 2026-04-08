@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import AnimatedSection from './AnimatedSection'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faServer, faArrowRightArrowLeft, faLightbulb, faGraduationCap, faCodePullRequest, faPlay, faMagnifyingGlass, faClipboardList, faMoon, faCircleCheck } from '@fortawesome/pro-regular-svg-icons'
+import { faServer, faArrowRightArrowLeft, faLightbulb, faGraduationCap, faCodePullRequest, faPlay, faMagnifyingGlass, faClipboardList, faMoon, faCircleCheck, faRoute, faWandMagicSparkles } from '@fortawesome/pro-regular-svg-icons'
 import type { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 
 const features: { title: string; description: string; icon: IconDefinition }[] = [
@@ -55,6 +55,16 @@ const features: { title: string; description: string; icon: IconDefinition }[] =
     description: "We use it. That's the proof.",
     icon: faCircleCheck,
   },
+  {
+    title: 'Workflows',
+    description: 'Goal → AI discussion → phased roadmap',
+    icon: faRoute,
+  },
+  {
+    title: 'Skills',
+    description: 'Auto-discovered slash commands for every agent',
+    icon: faWandMagicSparkles,
+  },
 ]
 
 export default function FeatureGrid() {
@@ -66,7 +76,7 @@ export default function FeatureGrid() {
             FEATURES
           </span>
           <h2 className="text-3xl sm:text-4xl font-heading font-bold text-cream tracking-tight">
-            10 power features
+            12 power features
           </h2>
           <p className="mt-4 text-text-muted max-w-lg mx-auto">
             Everything technical leads and small teams need to ship with AI agents.

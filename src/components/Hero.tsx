@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import EmailCapture from './EmailCapture'
+import AppMockup from './AppMockup'
 
 export default function Hero() {
   return (
@@ -72,22 +73,14 @@ export default function Hero() {
           Built inside DevFlow. Every feature you see was designed, tracked, and shipped here.
         </motion.p>
 
-        {/* App screenshot placeholder */}
+        {/* Stylised app mockup */}
         <motion.div
-          className="mt-16 mx-auto max-w-3xl rounded-t-xl border border-b-0 border-border bg-bg-raised overflow-hidden shadow-2xl shadow-indigo-glow/20"
+          className="mt-16 mx-auto max-w-3xl"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
         >
-          <div className="flex items-center gap-2 px-4 py-3 border-b border-border">
-            <div className="w-3 h-3 rounded-full bg-[#ff5f57]" />
-            <div className="w-3 h-3 rounded-full bg-[#febc2e]" />
-            <div className="w-3 h-3 rounded-full bg-[#28c840]" />
-            <span className="ml-2 text-xs text-text-muted font-mono">DevFlow — devflowcode.com</span>
-          </div>
-          <div className="aspect-[16/9] bg-bg flex items-center justify-center">
-            <img src="https://assets.craigcallen.com/media/devflowcode/devflow-screenshot.png"></img>
-          </div>
+          <AppMockup />
         </motion.div>
       </div>
     </section>
