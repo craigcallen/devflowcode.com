@@ -23,7 +23,11 @@ export default function FooterCTA() {
       <footer className="border-t border-border py-8">
         <div className="mx-auto max-w-6xl px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-text-muted">
           <div className="flex items-center gap-2">
-            <img src="https://assets.craigcallen.com/media/devflowcode/tertiary-logo-inverse.svg" alt="DevFlow" className="h-10" />
+            <img
+              src="https://assets.craigcallen.com/media/devflowcode/tertiary-logo-inverse.svg"
+              alt="DevFlow"
+              className="h-10"
+            />
           </div>
           <div className="flex items-center gap-4">
             <span>macOS</span>
@@ -31,7 +35,7 @@ export default function FooterCTA() {
             <span>Free Beta</span>
             <span className="text-border">|</span>
             <a
-              href="https://github.com/craigcallen/devflowcode.com"
+              href="https://github.com/craigcallen/devflowcode.com/blob/main/README.md"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-cream transition-colors"
