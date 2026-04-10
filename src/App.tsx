@@ -14,7 +14,7 @@ import FooterCTA from './components/FooterCTA'
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-bg">
+    <div className="min-h-screen bg-bg overflow-x-hidden">
       <Navbar />
       <Hero />
       <ProblemBar />
