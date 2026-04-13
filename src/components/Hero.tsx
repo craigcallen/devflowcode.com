@@ -17,7 +17,7 @@ export default function Hero() {
       {/* Radial glow */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-indigo/8 rounded-full blur-[120px]" />
 
-      <div className="relative z-10 mx-auto max-w-4xl px-10 sm:px-6 text-center">
+      <div className="relative z-10 w-full min-w-0 max-w-4xl mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -75,7 +75,7 @@ export default function Hero() {
 
         {/* Stylised app mockup */}
         <motion.div
-          className="mt-16 mx-auto max-w-3xl"
+          className="mt-16 mx-auto max-w-3xl w-full"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
