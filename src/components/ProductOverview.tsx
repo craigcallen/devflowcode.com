@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import AnimatedSection from './AnimatedSection'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChartKanban, faServer, faGraduationCap, faLightbulb, faCodePullRequest, faRectangleTerminal, faRoute, faWandMagicSparkles } from '@fortawesome/pro-regular-svg-icons'
+import { faChartKanban, faServer, faGraduationCap, faLightbulb, faCodePullRequest, faRectangleTerminal, faRoute, faWandMagicSparkles, faWifi } from '@fortawesome/pro-regular-svg-icons'
 import type { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 
 const surfaces: { title: string; label: string; description: string; icon: IconDefinition }[] = [
@@ -61,6 +61,13 @@ const surfaces: { title: string; label: string; description: string; icon: IconD
       'Every MCP tool packaged as a slash command. Agents discover capabilities automatically — zero prompt engineering.',
     icon: faWandMagicSparkles,
   },
+  {
+    title: 'Work from anywhere, never lose your place',
+    label: 'Remote Sessions',
+    description:
+      'Connect to your full dev environment from any device with a link or QR code. Sessions persist in the background.',
+    icon: faWifi,
+  },
 ]
 
 export default function ProductOverview() {
@@ -72,7 +79,7 @@ export default function ProductOverview() {
             THE WORKSPACE
           </span>
           <h2 className="text-3xl sm:text-4xl font-heading font-bold text-cream tracking-tight">
-            Eight surfaces. One workspace.
+            Nine surfaces. One workspace.
           </h2>
           <p className="mt-4 text-text-muted max-w-xl mx-auto">
             Everything your AI agents need to ship — without you explaining it again.

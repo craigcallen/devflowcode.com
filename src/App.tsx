@@ -6,6 +6,7 @@ import ProductOverview from './components/ProductOverview'
 import WorkflowShowcase from './components/WorkflowShowcase'
 import MCPDeepDive from './components/MCPDeepDive'
 import SkillsShowcase from './components/SkillsShowcase'
+import RemoteSessions from './components/RemoteSessions'
 import TokenComparison from './components/TokenComparison'
 import Dogfooding from './components/Dogfooding'
 import FeatureGrid from './components/FeatureGrid'
@@ -23,6 +24,7 @@ export default function App() {
       <WorkflowShowcase />
       <MCPDeepDive />
       <SkillsShowcase />
+      <RemoteSessions />
       <TokenComparison />
       <Dogfooding />
       <FeatureGrid />
